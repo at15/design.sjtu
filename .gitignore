@@ -3,5 +3,5 @@
 
 #ignore all the zip file
 *.zip
-
+Thumbs.db
 .psd
