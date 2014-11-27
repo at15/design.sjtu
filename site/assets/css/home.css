@@ -52,7 +52,7 @@
     margin-left: -10px;
 
     width: 110%;
-    height: 300px;
+    height:200px;
     /*background-color: #ffff00;*/
 
     /*TODO:this will hide the btn as well*/
@@ -218,8 +218,8 @@
 }
 
 #page-2 > .banner > img {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 #footer {
