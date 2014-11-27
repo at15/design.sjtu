@@ -68,7 +68,7 @@
     word-wrap: break-word;
     letter-spacing: 30px;
 
-    color:#8a5e39;
+    color: #8a5e39;
 }
 
 .page > .banner > .small-slide > .small-slide-active {
@@ -222,6 +222,10 @@
 #page-2 > .banner > img {
     margin-top: 80px;
     margin-bottom: 80px;
+}
+
+#page-3 {
+    height: 80%;
 }
 
 #page-3 > .banner > img {
