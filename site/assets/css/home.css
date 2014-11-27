@@ -232,12 +232,12 @@
 }
 
 #page-1 > .banner {
-    padding-top: 40px;
+    padding-top: 5%;
 }
 
 #page-2 > .banner > img {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 10%;
+    margin-bottom: 60%;
 }
 
 #page-3 {
