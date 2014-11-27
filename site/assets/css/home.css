@@ -1,0 +1,227 @@
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.page .page-bkg {
+
+    width: 100%;
+    height: auto;
+
+    z-index: -1;
+}
+
+.page > .banner {
+    position: absolute;
+    top: 0;
+    left: 12%;
+
+    width: 200px;
+    height: 100%;
+    /*padding: 40px;*/
+
+    font-size: 60px; /* make it vertical */
+    text-align: center;
+
+    color: white;
+    background-color: #62210d;
+
+    z-index: 25;
+}
+
+.page > .banner > .btn-page-up,
+.page > .banner > .btn-page-down {
+    margin: auto;
+    width: 30%;
+    color: #b8ac86;
+    cursor: pointer;
+}
+
+.page > .banner > .btn-page-up > img,
+.page > .banner > .btn-page-down > img {
+    width: 100%;
+    height: auto;
+}
+
+.page > .banner > .small-slide {
+    position: relative;
+
+    margin-left: -10px;
+
+    width: 110%;
+    height: 300px;
+    /*background-color: #ffff00;*/
+
+    /*TODO:this will hide the btn as well*/
+    overflow: hidden;
+}
+
+.page > .banner > .small-slide > .small-slide-content {
+    float: left;
+    margin-left: 30px;
+    padding-top: 20px;
+    width: 30px;
+    font-size: 18px;
+    word-wrap: break-word;
+    letter-spacing: 30px;
+    /*text-align: center; wont work*/
+}
+
+.page > .banner > .small-slide > .small-slide-active {
+    padding-top: 0;
+    width: 40px;
+    font-size: 25px;
+}
+
+.page > .banner > .small-slide > .small-slide-left,
+.page > .banner > .small-slide > .small-slide-right {
+    position: absolute;
+    top: 20px;
+
+    width: 30px;
+    height: auto;
+
+    cursor: pointer;
+}
+
+.page > .banner > .small-slide > .small-slide-left {
+    left: 0;
+}
+
+.page > .banner > .small-slide > .small-slide-right {
+    right: 0;
+}
+
+.page > .banner > .small-slide > .small-slide-left > img,
+.page > .banner > .small-slide > .small-slide-right > img {
+    width: 100%;
+    height: auto;
+}
+
+.page > .h-slide-left,
+.page > .h-slide-right {
+    position: absolute;
+    top: 40%;
+
+    width: auto;
+    height: 90px;
+    z-index: 25;
+
+    cursor: pointer;
+}
+
+.page > .h-slide-left {
+    left: 30px;
+}
+
+.page > .h-slide-right {
+    right: 30px;
+}
+
+.page > .h-slide-left > img,
+.page > .h-slide-right > img {
+    width: auto;
+    height: 100%;
+
+}
+
+.page > .h-slide {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.page > .h-slide-active {
+    display: block;
+}
+
+.page > .h-slide > .box {
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+
+    width: 600px;
+    height: 300px;
+}
+
+.page > .box {
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+
+    width: 600px;
+    height: 300px;
+
+    /*z-index: 21;*/
+}
+
+.page > .box > .bkg,
+.page > .h-slide > .box > .bkg {
+    width: 100%;
+    height: 100%;
+
+    background-color: #ecebe7;
+    opacity: 0.9;
+}
+
+.page > .box > .content,
+.page > .h-slide > .box > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 20px 0 20px 30px;
+}
+
+.page > .box > .content > .title {
+    height: 50px;
+    line-height: 50px;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.page > .box > .content > .news-con {
+    position: absolute;
+    top: 70px;
+
+    width: 85%;
+    height: 200px;
+    /*background-color: black;*/
+    overflow-y: auto;
+}
+
+.page > .box > .content > .news-con > .one-news {
+    height: 30px;
+    line-height: 30px;
+
+    color: #b8ac86;
+    font-weight: bold;
+}
+
+.page > .box > .content > .news-con > .one-news > .date {
+    padding-right: 20px;
+}
+
+#page-1 > .banner {
+    padding-top: 40px;
+}
+
+#page-2 > .banner > img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#footer {
+    background-color: white;
+}

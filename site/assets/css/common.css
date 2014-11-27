@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 方正清客本悦;
+    src: url('fzqkby.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "方正清客本悦";
+}
+
+#wrap {
+    width: 100%;
+    background-color: black;
+}
+
+#menu {
+    position: fixed;
+    top: -200px;
+
+    width: 100%;
+    height: 200px;
+    padding-left: 80px;
+
+    background-color: #62210d;
+    z-index: 20;
+
+    box-shadow: 10px 5px 15px #020202;
+
+}
+
+#menu > .block {
+    float: left;
+
+    width: 18%;
+    height: 100%;
+
+    border-style: solid;
+    border-color: #b8ac86;
+    border-width: 0 0 0 1px;
+}
+
+#menu > .block > .title {
+    padding-left: 10px;
+
+    height: 60px;
+    line-height: 60px;
+
+    color: #b8ac86;
+    font-size: 25px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+#menu > .block > .title > a {
+    color: #b8ac86;
+    text-decoration: none;
+}
+
+#menu > .block > .item {
+    color: #e0d8ae;
+
+    padding-left: 10px;
+
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+#menu > .block > .item > a {
+    color: #e0d8ae;
+    text-decoration: none;
+}
+
+#menu-triangle {
+    position: fixed;
+    top: 0;
+    right: 20%;
+
+    width: 10%;
+    height: 40px;
+    color: white;
+
+    z-index: 20;
+    cursor: pointer;
+}
+
+#menu-triangle > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+
+.cls {
+    clear: both;
+}
