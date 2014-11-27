@@ -3,7 +3,6 @@
     width: 100%;
     height: 100%;
     position: relative;
-
 }
 
 .page .page-bkg {
@@ -225,7 +224,7 @@
 }
 
 #page-3 {
-    height: 80%;
+    /*height: 80%;*/
 }
 
 #page-3 > .banner > img {
@@ -239,5 +238,12 @@
 }
 
 #footer {
+    position: absolute;
+    top:90%;
+
+    width:100%;
+    height:10%;
+
     background-color: white;
+    z-index: 25;
 }
