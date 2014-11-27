@@ -30,6 +30,10 @@
 
     z-index: 25;
 }
+.page > .banner > img{
+    width: 60%;
+    height: auto;
+}
 
 .page > .banner > .btn-page-up,
 .page > .banner > .btn-page-down {
