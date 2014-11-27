@@ -33,7 +33,7 @@ body {
     float: left;
 
     width: 18%;
-    height: 100%;
+    height: 90%;
 
     border-style: solid;
     border-color: #b8ac86;
@@ -47,8 +47,8 @@ body {
     line-height: 60px;
 
     color: #b8ac86;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 24px;
+
 
     text-decoration: none;
 }
@@ -65,8 +65,8 @@ body {
 
     height: 30px;
     line-height: 30px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 17px;
+ 
 
 }
 
