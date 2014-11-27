@@ -52,7 +52,7 @@
     margin-left: -10px;
 
     width: 110%;
-    height:200px;
+    height: 200px;
     /*background-color: #ffff00;*/
 
     /*TODO:this will hide the btn as well*/
@@ -67,13 +67,15 @@
     font-size: 18px;
     word-wrap: break-word;
     letter-spacing: 30px;
-    /*text-align: center; wont work*/
+
+    color:#8a5e39;
 }
 
 .page > .banner > .small-slide > .small-slide-active {
     padding-top: 0;
     width: 40px;
     font-size: 25px;
+    color: #e5ddb5;
 }
 
 .page > .banner > .small-slide > .small-slide-left,
@@ -220,6 +222,16 @@
 #page-2 > .banner > img {
     margin-top: 80px;
     margin-bottom: 80px;
+}
+
+#page-3 > .banner > img {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+/*。。。。*/
+#text-sjx {
+    padding-top: 20px;
 }
 
 #footer {
