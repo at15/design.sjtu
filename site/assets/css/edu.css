@@ -1,0 +1,76 @@
+.edu-title {
+    text-align: center;
+    font-size: 30px;
+    background-image: url('../img/title_with_wave.png');
+    height: 43px;
+    margin-top: 24px;
+}
+
+.edu-title:before {
+    content: '「';
+}
+
+.edu-title:after {
+    content: '」';
+}
+
+.edu-list {
+    position: relative;
+    height: 152px;
+    padding: 54px 150px;
+}
+
+.edu-list > div {
+    float: left;
+    width: 96px;
+    padding: 8px 54px;
+    font-size: 24px;
+    color: #989898;
+}
+
+.edu-box-sm {
+    position: relative;
+    height: 356px;
+    padding: 0 85px;
+}
+
+.edu-box-sm > .edu-box-sm-item {
+    float: left;
+    width: 272px;
+    text-align: center;
+}
+
+.edu-box-sm > .edu-box-sm-item > .edu-box-sm-item-desc {
+    padding-top: 12px;
+    font-size: 18px;
+    color: #838280;
+}
+
+.edu-box-lg {
+    position: relative;
+    height: 426px;
+    padding: 0 85px;
+}
+
+.edu-box-lg > .edu-box-lg-item {
+    float: left;
+    width: 181px;
+    text-align: center;
+}
+
+.edu-box-lg > .edu-box-lg-item img{
+    height: 220px;
+}
+
+.edu-box-lg > .edu-box-lg-item > .edu-box-lg-item-title {
+    padding-top: 12px;
+    font-size: 18px;
+    color: #838280;
+    font-weight: bold;
+}
+
+.edu-box-lg > .edu-box-lg-item > .edu-box-lg-item-desc {
+    padding-top: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
