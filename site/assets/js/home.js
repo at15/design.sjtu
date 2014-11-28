@@ -103,7 +103,7 @@ function SlideGroup(groupId) {
 
 }
 
-SlideGroup.prototype.sLeft = function () {
+SlideGroup.prototype.sRight = function () {
     var me = this;
     if (me.slideActiveIndex === (me.len - 1)) {
         console.log('cant slide left');
@@ -138,7 +138,7 @@ SlideGroup.prototype.sLeft = function () {
     }
 };
 
-SlideGroup.prototype.sRight = function () {
+SlideGroup.prototype.sLeft = function () {
     var me = this;
     if (me.slideActiveIndex === 0) {
         console.log('cant slide right');
