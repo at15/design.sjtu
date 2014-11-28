@@ -1,0 +1,91 @@
+/* style used in a sub pages */
+#inner-wrap {
+    width: 1020px;
+    height: 600px;
+    /*background-color: #000000;*/
+    margin: 150px auto 0 auto;
+}
+
+.left-nav {
+    float: left;
+    padding-top: 11px;
+    width: 15%;
+    height: 200px;
+    text-align: center;
+
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 0 1px 0 0;
+}
+
+.left-nav > .title {
+    height: 60px;
+    line-height: 60px;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    border-style: solid;
+    border-color: #a79764;
+    border-width: 0 0 2px 0;
+}
+
+.left-nav > .item {
+    height: 40px;
+    line-height: 40px;
+
+    font-size: 20px;
+
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px 0 1px 0;
+}
+
+.left-nav > .active {
+    border-style: solid;
+    border-color: #62210d;
+    border-width: 0 5px 0 0;
+}
+
+.right-content {
+    float: left;
+
+    margin-top: -10px;
+    padding:0 20px 0 40px;
+
+    width: 70%;
+    height: 1000px;
+    /*background-color: #ffff00;*/
+
+}
+
+.right-content > .title {
+    height: 80px;
+
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 0 0 5px 0;
+    font-family: "微软雅黑";
+}
+
+.right-content > .title > .name{
+    float: left;
+
+    margin-top: 30px;
+    height: 50px;
+    line-height: 30px;
+
+    font-size: 40px;
+}
+
+.right-content .small-smd {
+    float: right;
+
+    width: auto;
+    height: 100%;
+}
+
+.right-content .small-smd > img {
+    width: auto;
+    height: 100%;
+}
