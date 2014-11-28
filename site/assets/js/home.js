@@ -45,7 +45,8 @@ function SlideGroup(groupId) {
     var smallSlideDataAttr = '[data-small-slide-group=' + groupId + ']';
     var width = $('.h-slide-active').width();
     var slideGroup = $('.h-slide' + dataAttr);
-    var smallSlideGroup = $('.small-slide' + smallSlideDataAttr + '>.small-slide-content');
+    var smallSlideGroup = $('.small-slide' + smallSlideDataAttr +
+    '>.small-slide-content-con>.small-slide-content');
     var len = slideGroup.length;
 
     var me = this;
@@ -119,8 +120,14 @@ SlideGroup.prototype.sLeft = function () {
         console.log('cant slide left for small slide');
     } else {
         console.log('small slide left');
-        $(me.smallSlideGroup[me.smallSlideActiveIndex]).removeClass('small-slide-active');
-        $(me.smallSlideGroup[me.smallSlideActiveIndex - 1]).addClass('small-slide-active');
+        $(me.smallSlideGroup[me.smallSlideActiveIndex])
+            .removeClass('small-slide-content-middle')
+            .addClass('small-slide-content-left');
+        $(me.smallSlideGroup[me.smallSlideActiveIndex - 1])
+            .removeClass('small-slide-content-left');
+        $(me.smallSlideGroup[me.smallSlideActiveIndex + 1])
+            .removeClass('small-slide-content-right')
+            .addClass('small-slide-content-middle');
         me.smallSlideActiveIndex = me.smallSlideActiveIndex - 1;
     }
 };
@@ -142,9 +149,15 @@ SlideGroup.prototype.sRight = function () {
     if (me.smallSlideActiveIndex === (me.len - 1)) {
         console.log('cant slide left for small slide');
     } else {
-        console.log('small slide right');
-        $(me.smallSlideGroup[me.smallSlideActiveIndex]).removeClass('small-slide-active');
-        $(me.smallSlideGroup[me.smallSlideActiveIndex + 1]).addClass('small-slide-active');
+        $(me.smallSlideGroup[me.smallSlideActiveIndex])
+            .removeClass('small-slide-content-middle')
+            .addClass('small-slide-content-right');
+        $(me.smallSlideGroup[me.smallSlideActiveIndex - 1])
+            .removeClass('small-slide-content-left')
+            .addClass('small-slide-content-middle');
+        $(me.smallSlideGroup[me.smallSlideActiveIndex + 1])
+            .removeClass('small-slide-content-right');
+
         me.smallSlideActiveIndex = me.smallSlideActiveIndex + 1;
     }
 };
