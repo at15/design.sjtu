@@ -1,1 +1,39 @@
 /* the style for news */
+
+.news-lines > div:nth-child(odd) {
+    background-color: #F3F3F3;
+}
+
+.news-lines > div {
+    padding: 8px 0;
+}
+
+.news-lines > div > .news-category {
+    color: #988A64;
+}
+
+.news-lines > div > .news-category:before {
+    content: '「';
+}
+
+.news-lines > div > .news-category:after {
+    content: '」';
+}
+
+.news-lines > div > .news-title {
+    color: #323232;
+}
+
+.news-lines > div > .news-time {
+    width: 100%;
+    color: #A8A8A8;
+    text-align: right;
+    font-size: 12px;
+    font-family: '微软雅黑';
+}
+
+.news-page {
+    text-align: right;
+    color: #515151;
+    font-family: '微软雅黑';
+}
