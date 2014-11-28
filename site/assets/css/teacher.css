@@ -83,3 +83,10 @@
 .teacher-desc {
     padding: 16px 98px 16px 98px;
 }
+
+.teacher-page {
+    text-align: right;
+    color: #515151;
+    font-family: '微软雅黑';
+	float:right;
+}
