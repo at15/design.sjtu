@@ -79,11 +79,11 @@ function SlideGroup(groupId) {
         }
     });
 
-    // find the active one for title
+    // find the active one for title(small slide)
     smallSlideGroup.each(function (index) {
         //console.log(slideGroup[index]);
         var slide = $(smallSlideGroup[index]);
-        if (slide.hasClass('small-slide-active')) {
+        if (slide.hasClass('small-slide-content-middle')) {
             console.log('i got active for small slide yeah!', index);
             me.smallSlideActiveIndex = index;
         }
