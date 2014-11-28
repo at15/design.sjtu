@@ -71,10 +71,16 @@
 
 .teacher-avatar {
     text-align: center;
+    margin-top: 32px;
 }
 
 .teacher-title-lg {
     text-align: center;
     color: #C0B285;
     font-size: 24px;
+    margin-top: 28px;
+}
+
+.teacher-desc {
+    padding: 16px 98px 16px 98px;
 }
