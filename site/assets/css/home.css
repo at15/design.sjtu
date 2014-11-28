@@ -97,18 +97,18 @@
 
     left: 45%;
     width: 40px;
-    font-size: 20px;
+    font-size: 0.4em;
     color: #e5ddb5;
 }
 
 .page > .banner > .small-slide > .small-slide-content-con > .small-slide-content-left {
     display: block;
-    left: 10%;
+    left: 15%;
 }
 
 .page > .banner > .small-slide > .small-slide-content-con > .small-slide-content-right {
     display: block;
-    right: 10%;
+    right: 15%;
 }
 
 .page > .banner > .small-slide > .small-slide-left,
@@ -290,8 +290,12 @@
 }
 
 #page-3 > .banner > img {
-    margin-top: 70px;
+    margin-top: 40px;
     margin-bottom: 40px;
+}
+
+#page-3 .small-slide{
+    height: 210px;
 }
 
 /*。。。。*/
