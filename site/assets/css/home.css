@@ -314,12 +314,27 @@
     -webkit-animation: twinkling 1.5s infinite ease-in-out;
 }
 
+
+#depart-wenguan > div.splash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto; /* ?*/
+}
+
+#depart-wenguan > div.splash > img {
+    width: 100%;
+    height: auto;
+    -webkit-animation: twinkling 1.5s infinite ease-in-out;
+}
+
 /*。。。。*/
 #text-sjx {
     padding-top: 20px;
 }
 
-.footer {
+#footer {
     position: absolute;
     top: 90%;
 
@@ -329,20 +344,11 @@
     z-index: 25;
 }
 
-.contact {
-    float: right;
-    font-family: "微软雅黑";
-    text-align: right;
-    padding: 15px 0 5px;
-    font-size: 13px;
-    color: #484848;
-    padding-right: 30px;
+#footer > .content {
+    width: 1000px;
+    margin: auto;
 }
 
-.link {
-    font-family: "微软雅黑";
-    font-size: 13px;
-    color: #484848;
-    padding: 15px 0 5px;
-    padding-left: 130px;
+#footer > .content > .logos {
+
 }
