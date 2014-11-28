@@ -83,7 +83,7 @@
     top: 0;
 
     width: 30px;
-    font-size: 18px;
+    font-size: 16px;
     word-wrap: break-word;
     letter-spacing: 30px;
 
@@ -95,20 +95,20 @@
     display: block;
     padding-top: 0;
 
-    left: 80px;
+    left: 85px;
     width: 40px;
-    font-size: 25px;
+    font-size: 20px;
     color: #e5ddb5;
 }
 
 .page > .banner > .small-slide > .small-slide-content-con > .small-slide-content-left {
     display: block;
-    left: 20px;
+    left: 25px;
 }
 
 .page > .banner > .small-slide > .small-slide-content-con > .small-slide-content-right{
     display: block;
-    right: 20px;
+    right: 25px;
 }
 
 .page > .banner > .small-slide > .small-slide-left,
