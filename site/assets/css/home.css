@@ -184,7 +184,7 @@
     right: 10%;
     bottom: 40px;
     box-shadow: 0px 0px 30px #2b1e0a;
-    width: 670px;
+    width: 55%;
     height: 150px;
 
 }
@@ -194,7 +194,7 @@
     right: 10%;
     bottom: 40px;
     box-shadow: 0px 0px 30px #2b1e0a;
-    width: 670px;
+    width: 55%;
     height: 300px;
 
     /*z-index: 21;*/
@@ -211,7 +211,7 @@
 .page > .h-slide > .box > .box-slide-left-btn,
 .page > .h-slide > .box > .box-slide-right-btn {
     position: absolute;
-    top: 30%;
+    top: 35%;
     width: auto;
     height: 30%;
 }
