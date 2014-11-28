@@ -314,6 +314,34 @@
     height: 210px;
 }
 
+#depart-news > div.splash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto; /* ?*/
+}
+
+#depart-news > div.splash > img {
+    width: 100%;
+    height: auto;
+    -webkit-animation: twinkling 1.5s infinite ease-in-out;
+}
+
+#depart-design > div.splash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto; /* ?*/
+}
+
+#depart-design > div.splash > img {
+    width: 100%;
+    height: auto;
+    -webkit-animation: twinkling 1.5s infinite ease-in-out;
+}
+
 #depart-movie > div.splash {
     position: absolute;
     top: 0;
@@ -401,6 +429,10 @@
     padding: 0;
 }
 
+#footer > .content > .links a{
+    color: #000000;
+    text-decoration: none;
+}
 #footer > .content > .contact {
     float: left;
     margin-left: 100px;
