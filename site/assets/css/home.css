@@ -225,6 +225,7 @@
 }
 
 .page > .box > .content > .news-con > .one-news > .date {
+    font-weight: normal;
     padding-right: 20px;
 }
 
@@ -276,8 +277,9 @@
 }
 
 .link {
-	font-family:"微软雅黑";
-	font-size:13px;
-	color:#484848;
-	padding:15px 0 5px;
-	padding-left: 130px;
+    font-family: "微软雅黑";
+    font-size: 13px;
+    color: #484848;
+    padding: 15px 0 5px;
+    padding-left: 130px;
+}
