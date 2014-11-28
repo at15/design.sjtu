@@ -89,11 +89,6 @@ function SlideGroup(groupId) {
         }
     });
 
-    $('.h-slide-left' + dataAttr).click(function () {
-        console.log('slide left for group' + groupId);
-        me.sLeft();
-    });
-
 
     $('.small-slide-left' + smallSlideDataAttr).click(function () {
         console.log('slide left for group' + groupId);
@@ -104,12 +99,7 @@ function SlideGroup(groupId) {
         console.log('slide right for group' + groupId);
         me.sRight();
     });
-
-    $('.h-slide-right' + dataAttr).click(function () {
-        console.log('slide right for group' + groupId);
-        me.sRight();
-
-    });
+    
 }
 
 SlideGroup.prototype.sLeft = function () {
