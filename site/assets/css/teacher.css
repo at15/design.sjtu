@@ -62,11 +62,14 @@
     line-height: 50px;
 
     font-size: 40px;
-    font-weight: bold;
+    
 
     border-style: solid;
     border-color: lightgrey;
     border-width: 0 0 5px 0;
+	font-family: 微软雅黑;
+
+
 }
 
 .depart-nav{
