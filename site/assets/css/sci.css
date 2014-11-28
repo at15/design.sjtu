@@ -22,10 +22,6 @@ table.table tr:first-child td:after {
     content: '」';
 }
 
-table.table tr.even {
-    background: #FFF;
-}
-
 table.table tr.odd {
     background: #F3F3F3;
 }
