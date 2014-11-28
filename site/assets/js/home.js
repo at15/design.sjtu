@@ -99,7 +99,7 @@ function SlideGroup(groupId) {
         console.log('slide right for group' + groupId);
         me.sRight();
     });
-    
+
 }
 
 SlideGroup.prototype.sLeft = function () {
