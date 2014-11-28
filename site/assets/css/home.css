@@ -181,7 +181,7 @@
 
 .page > .h-slide > .box {
     position: absolute;
-    right: 100px;
+    right: 10%;
     bottom: 40px;
     box-shadow: 0px 0px 30px #2b1e0a;
     width: 670px;
@@ -191,7 +191,7 @@
 
 .page > .box {
     position: absolute;
-    right: 100px;
+    right: 10%;
     bottom: 40px;
     box-shadow: 0px 0px 30px #2b1e0a;
     width: 670px;
@@ -239,7 +239,7 @@
     width: 88%;
     height: 80%;
 
-    padding:2% 5% 0 5%;
+    padding: 2% 5% 0 5%;
 }
 
 .page > .box > .content > .title {
@@ -249,11 +249,12 @@
     color: #2A2A2A;
 }
 
-.page > .h-slide > .box > .content > .title{
+.page > .h-slide > .box > .content > .title {
     height: 30px;
     line-height: 30px;
     font-size: 18px;
 }
+
 .page > .box > .content > .news-con {
     position: absolute;
     top: 60px;
@@ -294,7 +295,7 @@
     margin-bottom: 40px;
 }
 
-#page-3 .small-slide{
+#page-3 .small-slide {
     height: 210px;
 }
 
