@@ -122,3 +122,10 @@ div.hr-line {
     height: 24px;
     color: #b1b1b1;
 }
+
+.footer-secondary {
+    text-align: center;
+    font-size: 12px;
+    font-family: '微软雅黑';
+    margin: 48px 0;
+}
