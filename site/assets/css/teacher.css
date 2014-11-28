@@ -135,9 +135,11 @@
     height: 50px;
     line-height: 50px;
     font-size: 35px;
-    font-weight: bold;
+    
+
 
     text-align: center;
+	color:#8A7A45;
 
     border-style: solid;
     border-color: #b8ac86;
