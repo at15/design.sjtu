@@ -96,6 +96,8 @@
 
 .page > .banner > .small-slide > .small-slide-left,
 .page > .banner > .small-slide > .small-slide-right {
+    display: none; /* hide by default */
+
     position: absolute;
     top: 20px;
 
