@@ -47,12 +47,23 @@
 
 .page > .banner > .btn-page-up,
 .page > .banner > .btn-page-down {
+    position: absolute;
+    left: 33%;
+
     margin: auto;
     width: 30%;
     color: #b8ac86;
     cursor: pointer;
 
     -webkit-animation: twinkling 1.5s infinite ease-in-out;
+}
+
+.page > .banner > .btn-page-up {
+    top: 15px;
+}
+
+.page > .banner > .btn-page-down {
+    bottom: 20px;
 }
 
 .page > .banner > .btn-page-up > img,
@@ -277,6 +288,9 @@
 #page-1 > .banner {
     padding-top: 5%;
 }
+#page-1 .banner > .btn-page-down {
+    bottom: 70px;
+}
 
 #page-1 .box {
     max-width: 900px;
@@ -287,7 +301,7 @@
 }
 
 #page-2 > .banner > img {
-    margin-top: 10%;
+    margin-top: 20%;
     margin-bottom: 60%;
 }
 
