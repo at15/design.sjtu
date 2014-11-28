@@ -196,8 +196,6 @@
     box-shadow: 0px 0px 30px #2b1e0a;
     width: 55%;
     height: 300px;
-
-    /*z-index: 21;*/
 }
 
 .page > .box > .bkg,
@@ -236,10 +234,10 @@
     top: 0;
     left: 0;
 
-    width: 88%;
+    width: 85%;
     height: 80%;
 
-    padding: 2% 5% 0 5%;
+    padding: 2% 5% 0 8%;
 }
 
 .page > .box > .content > .title {
@@ -279,6 +277,10 @@
 
 #page-1 > .banner {
     padding-top: 5%;
+}
+
+#page-1 .box {
+    max-width: 900px;
 }
 
 #page-1 .box > .bkg {
