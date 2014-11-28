@@ -68,3 +68,13 @@
     text-align: center;
     color: #8A7A45;
 }
+
+.teacher-avatar {
+    text-align: center;
+}
+
+.teacher-title-lg {
+    text-align: center;
+    color: #C0B285;
+    font-size: 24px;
+}
