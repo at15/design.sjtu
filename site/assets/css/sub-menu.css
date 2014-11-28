@@ -1,12 +1,16 @@
 /* for page that has different menu */
-#menu{
+#menu {
     height: 270px;
 }
 
-#menu > .block{
+#menu .hide {
+    display: none;
+}
+
+#menu > .block {
     height: 74%;
 }
 
 #menu-triangle {
-    top:70px;
+    top: 70px;
 }

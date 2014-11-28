@@ -53,7 +53,7 @@
     color: #b8ac86;
     cursor: pointer;
 
-    -webkit-animation: twinkling 2s infinite ease-in-out;
+    -webkit-animation: twinkling 1.5s infinite ease-in-out;
 }
 
 .page > .banner > .btn-page-up > img,

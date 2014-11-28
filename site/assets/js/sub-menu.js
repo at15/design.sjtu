@@ -22,6 +22,8 @@
     }
 
     function menuScrollDown() {
+        $('#logo-up').show('slow');
+        $('#logo-down').hide('slow');
         $('#menu').animate(
             {top: 0},
             'slow'
@@ -34,6 +36,8 @@
     }
 
     function menuScrollUp() {
+        $('#logo-up').hide();
+        $('#logo-down').show();
         $('#menu').animate(
             {top: -200}
         );
