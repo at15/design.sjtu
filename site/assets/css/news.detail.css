@@ -1,0 +1,52 @@
+/* the style for news.detail */
+
+.article > .article-title-lg {
+    text-align: center;
+    font-size: 24px;
+    background-image: url('../img/title_with_wave.png');
+    height: 43px;
+    padding-top: 5px;
+    margin-top: 24px;
+}
+
+.article > .article-title-md {
+    color: #8A7A44;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+
+.article > .article-title-md:before {
+    content: '「';
+}
+
+.article > .article-title-md:after {
+    content: '」';
+}
+
+.article > .article-title-sm {
+    color: #CFC6A7;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.article > .article-title-sm:before {
+    content: '·';
+}
+
+.article > .article-title-sm:after {
+    content: '·';
+}
+
+.article > .article-content {
+    line-height: 28px;
+}
+
+.article > .article-notice {
+    color: #CFC6A7;
+    text-align: center;
+    line-height: 24px;
+}
