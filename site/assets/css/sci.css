@@ -1,1 +1,31 @@
 /* science */
+
+table.table {
+    border-spacing: 0;
+}
+
+table.table td {
+    padding: 12px 6px;
+    text-align: center;
+}
+
+table.table tr:first-child {
+    color: #897B44;
+    font-size: 1.2em;
+}
+
+table.table tr:first-child td:before {
+    content: '「';
+}
+
+table.table tr:first-child td:after {
+    content: '」';
+}
+
+table.table tr.even {
+    background: #FFF;
+}
+
+table.table tr.odd {
+    background: #F3F3F3;
+}
