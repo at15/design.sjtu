@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 方正清客本悦;
+    font-family: '方正清客本悦';
     src: url('fzqkby.ttf');
 }
 
@@ -25,7 +25,7 @@ body {
     background-color: #62210d;
     z-index: 20;
 
-    box-shadow: 10px 5px 15px #020202;
+    box-shadow: -10px 5px 15px #020202;
 
 }
 
@@ -98,4 +98,11 @@ body {
 
 .cls {
     clear: both;
+}
+
+div.hr-line {
+    width: 580px;
+    height: 20px;
+    margin-left: 73px;
+    background-image: url('../img/hr.png');
 }

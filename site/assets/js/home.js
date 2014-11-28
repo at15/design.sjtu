@@ -2,7 +2,7 @@ $(document).ready(init);
 
 function init() {
     pageScroll();
-    hSlide()
+    hSlide();
 }
 
 function pageScroll() {
@@ -26,72 +26,18 @@ function pageScroll() {
 function hSlide() {
     var sNews = new SlideGroup(1);
     var sDepart = new SlideGroup(2);
-    //slideNewsTitle();
-}
-
-// e... so ugly
-function slideNewsTitle() {
-    var smallSlideGroupNews = $('.small-slide[data-small-slide-group=1]>.small-slide-content');
-    console.log('small slide group news', smallSlideGroupNews);
-    var len = smallSlideGroupNews.length;
-    var activeIndex = 0;
-    // find the active one
-    smallSlideGroupNews.each(function (index) {
-        //console.log(slideGroup[index]);
-        var slide = $(smallSlideGroupNews[index]);
-        if (slide.hasClass('small-slide-active')) {
-            console.log('i got active for small slide yeah!', index);
-            activeIndex = index;
-        }
-    });
-    $('.small-slide-left[data-small-slide-group=1]').click(function () {
-        if (activeIndex === 0) {
-            console.log('cant slide left for small slide');
-        } else {
-            console.log('small slide left');
-            $(smallSlideGroupNews[activeIndex]).removeClass('small-slide-active');
-            $(smallSlideGroupNews[activeIndex - 1]).addClass('small-slide-active');
-            activeIndex = activeIndex - 1;
-        }
+    // show the small slide btn
+    $('.small-slide').mouseover(function () {
+        $(this).find('.small-slide-left').show()
+            .end()
+            .find('.small-slide-right').show();
+    }).mouseout(function () {
+        $(this).find('.small-slide-left').hide()
+            .end()
+            .find('.small-slide-right').hide();
     });
 
-    $('.small-slide-right[data-small-slide-group=1]').click(function () {
-        if (activeIndex === (len - 1)) {
-            console.log('cant slide left for small slide');
-        } else {
-            console.log('small slide left');
-            $(smallSlideGroupNews[activeIndex]).removeClass('small-slide-active');
-            $(smallSlideGroupNews[activeIndex + 1]).addClass('small-slide-active');
-            activeIndex = activeIndex + 1;
-        }
-    });
-    //$('.h-slide-left[data-h-slide-group=1]').click(function(){
-    //    console.log('slide left for group1');
-    //    if(slideActiveIndex === (len -1) ){
-    //        console.log('cant slide left');
-    //    }else{
-    //        $(slideGroup[slideActiveIndex])
-    //            .animate({left:(width * -1)},'slow');
-    //        $(slideGroup[slideActiveIndex + 1])
-    //            .show()
-    //            .animate({left:0},'slow');
-    //        slideActiveIndex = slideActiveIndex + 1;
-    //    }
-    //});
-    //$('.h-slide-right[data-h-slide-group=1]').click(function(){
-    //    console.log('slide right for group1');
-    //    if(slideActiveIndex === 0){
-    //        console.log('cant slide right');
-    //    }else{
-    //        $(slideGroup[slideActiveIndex])
-    //            .animate({left:width},'slow');
-    //        // rearrange and move the left one
-    //        $(slideGroup[slideActiveIndex-1])
-    //            .show()
-    //            .animate({left:0},'slow');
-    //        slideActiveIndex = slideActiveIndex -1;
-    //    }
-    //});
+    // TODO:hide when move out?
 }
 
 function SlideGroup(groupId) {
@@ -99,7 +45,8 @@ function SlideGroup(groupId) {
     var smallSlideDataAttr = '[data-small-slide-group=' + groupId + ']';
     var width = $('.h-slide-active').width();
     var slideGroup = $('.h-slide' + dataAttr);
-    var smallSlideGroup = $('.small-slide' + smallSlideDataAttr + '>.small-slide-content');
+    var smallSlideGroup = $('.small-slide' + smallSlideDataAttr +
+    '>.small-slide-content-con>.small-slide-content');
     var len = slideGroup.length;
 
     var me = this;
@@ -133,20 +80,16 @@ function SlideGroup(groupId) {
         }
     });
 
-    // find the active one for title
+    // find the active one for title(small slide)
     smallSlideGroup.each(function (index) {
         //console.log(slideGroup[index]);
         var slide = $(smallSlideGroup[index]);
-        if (slide.hasClass('small-slide-active')) {
+        if (slide.hasClass('small-slide-content-middle')) {
             console.log('i got active for small slide yeah!', index);
             me.smallSlideActiveIndex = index;
         }
     });
 
-    $('.h-slide-left' + dataAttr).click(function () {
-        console.log('slide left for group' + groupId);
-        me.sLeft();
-    });
 
     $('.small-slide-left' + smallSlideDataAttr).click(function () {
         console.log('slide left for group' + groupId);
@@ -158,11 +101,6 @@ function SlideGroup(groupId) {
         me.sRight();
     });
 
-    $('.h-slide-right' + dataAttr).click(function () {
-        console.log('slide right for group' + groupId);
-        me.sRight();
-
-    });
 }
 
 SlideGroup.prototype.sLeft = function () {
@@ -178,13 +116,25 @@ SlideGroup.prototype.sLeft = function () {
         me.slideActiveIndex = me.slideActiveIndex + 1;
     }
 
-    if (me.smallSlideActiveIndex === 0) {
+    if (me.smallSlideActiveIndex === (me.len - 1)) {
         console.log('cant slide left for small slide');
     } else {
         console.log('small slide left');
-        $(me.smallSlideGroup[me.smallSlideActiveIndex]).removeClass('small-slide-active');
-        $(me.smallSlideGroup[me.smallSlideActiveIndex - 1]).addClass('small-slide-active');
-        me.smallSlideActiveIndex = me.smallSlideActiveIndex - 1;
+        //alert('small slide before left active index is ' + me.smallSlideActiveIndex);
+        $(me.smallSlideGroup[me.smallSlideActiveIndex - 1])
+            .removeClass('small-slide-content-left');
+        $(me.smallSlideGroup[me.smallSlideActiveIndex])
+            .removeClass('small-slide-content-middle')
+            .addClass('small-slide-content-left');
+        $(me.smallSlideGroup[me.smallSlideActiveIndex + 1])
+            .removeClass('small-slide-content-right')
+            .addClass('small-slide-content-middle');
+        if (me.smallSlideActiveIndex < (me.len - 2)) {
+            $(me.smallSlideGroup[me.smallSlideActiveIndex + 2])
+                .addClass('small-slide-content-right');
+        }
+        me.smallSlideActiveIndex = me.smallSlideActiveIndex + 1;
+        //alert('small slide after left active index is ' + me.smallSlideActiveIndex);
     }
 };
 
@@ -202,12 +152,24 @@ SlideGroup.prototype.sRight = function () {
         me.slideActiveIndex = me.slideActiveIndex - 1;
     }
 
-    if (me.smallSlideActiveIndex === (me.len - 1)) {
+    if (me.smallSlideActiveIndex === 0) {
         console.log('cant slide left for small slide');
     } else {
-        console.log('small slide right');
-        $(me.smallSlideGroup[me.smallSlideActiveIndex]).removeClass('small-slide-active');
-        $(me.smallSlideGroup[me.smallSlideActiveIndex + 1]).addClass('small-slide-active');
-        me.smallSlideActiveIndex = me.smallSlideActiveIndex + 1;
+        //alert('small slide before right active index is ' + me.smallSlideActiveIndex);
+        $(me.smallSlideGroup[me.smallSlideActiveIndex + 1])
+            .removeClass('small-slide-content-right');
+        $(me.smallSlideGroup[me.smallSlideActiveIndex])
+            .removeClass('small-slide-content-middle')
+            .addClass('small-slide-content-right');
+        $(me.smallSlideGroup[me.smallSlideActiveIndex - 1])
+            .removeClass('small-slide-content-left')
+            .addClass('small-slide-content-middle');
+        if (me.smallSlideActiveIndex > 1) {
+            $(me.smallSlideGroup[me.smallSlideActiveIndex - 2])
+                .addClass('small-slide-content-left');
+        }
+        me.smallSlideActiveIndex = me.smallSlideActiveIndex - 1;
+        //alert('small slide after right active index is ' + me.smallSlideActiveIndex);
+
     }
 };
