@@ -116,19 +116,25 @@ SlideGroup.prototype.sLeft = function () {
         me.slideActiveIndex = me.slideActiveIndex + 1;
     }
 
-    if (me.smallSlideActiveIndex === 0) {
+    if (me.smallSlideActiveIndex === (me.len - 1)) {
         console.log('cant slide left for small slide');
     } else {
         console.log('small slide left');
+        //alert('small slide before left active index is ' + me.smallSlideActiveIndex);
+        $(me.smallSlideGroup[me.smallSlideActiveIndex - 1])
+            .removeClass('small-slide-content-left');
         $(me.smallSlideGroup[me.smallSlideActiveIndex])
             .removeClass('small-slide-content-middle')
             .addClass('small-slide-content-left');
-        $(me.smallSlideGroup[me.smallSlideActiveIndex - 1])
-            .removeClass('small-slide-content-left');
         $(me.smallSlideGroup[me.smallSlideActiveIndex + 1])
             .removeClass('small-slide-content-right')
             .addClass('small-slide-content-middle');
-        me.smallSlideActiveIndex = me.smallSlideActiveIndex - 1;
+        if (me.smallSlideActiveIndex < (me.len - 2)) {
+            $(me.smallSlideGroup[me.smallSlideActiveIndex + 2])
+                .addClass('small-slide-content-right');
+        }
+        me.smallSlideActiveIndex = me.smallSlideActiveIndex + 1;
+        //alert('small slide after left active index is ' + me.smallSlideActiveIndex);
     }
 };
 
@@ -146,18 +152,24 @@ SlideGroup.prototype.sRight = function () {
         me.slideActiveIndex = me.slideActiveIndex - 1;
     }
 
-    if (me.smallSlideActiveIndex === (me.len - 1)) {
+    if (me.smallSlideActiveIndex === 0) {
         console.log('cant slide left for small slide');
     } else {
+        //alert('small slide before right active index is ' + me.smallSlideActiveIndex);
+        $(me.smallSlideGroup[me.smallSlideActiveIndex + 1])
+            .removeClass('small-slide-content-right');
         $(me.smallSlideGroup[me.smallSlideActiveIndex])
             .removeClass('small-slide-content-middle')
             .addClass('small-slide-content-right');
         $(me.smallSlideGroup[me.smallSlideActiveIndex - 1])
             .removeClass('small-slide-content-left')
             .addClass('small-slide-content-middle');
-        $(me.smallSlideGroup[me.smallSlideActiveIndex + 1])
-            .removeClass('small-slide-content-right');
+        if (me.smallSlideActiveIndex > 1) {
+            $(me.smallSlideGroup[me.smallSlideActiveIndex - 2])
+                .addClass('small-slide-content-left');
+        }
+        me.smallSlideActiveIndex = me.smallSlideActiveIndex - 1;
+        //alert('small slide after right active index is ' + me.smallSlideActiveIndex);
 
-        me.smallSlideActiveIndex = me.smallSlideActiveIndex + 1;
     }
 };
