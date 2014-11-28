@@ -1,16 +1,13 @@
 /**
  * Created by at15_000 on 2014/11/28.
  */
-// the menu for is different form sub pages. so just split it out
+// for menus in sub pages
 (function () {
     var expanded = false;
 
     $(document).ready(function () {
         bindMenuScrollDown();
-        // do the first scroll down
-        setTimeout(menuScrollDown,800);
-        // go up after 1s?
-        setTimeout(menuScrollUp, 2000);
+        // TODO:does sub page need auto scroll down at first time?
     });
 
     function bindMenuScrollDown() {
@@ -30,7 +27,7 @@
             'slow'
         );
         $('#menu-triangle').animate(
-            {top: 200},
+            {top: 270},
             'slow'
         );
         expanded = true;
@@ -41,7 +38,7 @@
             {top: -200}
         );
         $('#menu-triangle').animate({
-            top: 0
+            top:70
         });
         expanded = false;
     }

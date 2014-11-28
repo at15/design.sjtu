@@ -1,0 +1,12 @@
+/* for page that has different menu */
+#menu{
+    height: 270px;
+}
+
+#menu > .block{
+    height: 74%;
+}
+
+#menu-triangle {
+    top:70px;
+}
