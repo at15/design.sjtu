@@ -253,18 +253,13 @@
     padding-top: 5%;
 }
 
+#page-1 .box > .bkg{
+    opacity: 0.9;
+}
+
 #page-2 > .banner > img {
     margin-top: 10%;
     margin-bottom: 60%;
-}
-
-/*TODO*/
-#small-slide-1 {
-    /*margin-top: 30%;*/
-}
-
-#page-3 {
-    /*height: 80%;*/
 }
 
 #page-3 > .banner > img {
