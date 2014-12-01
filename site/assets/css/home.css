@@ -96,7 +96,7 @@
     top: 0;
 
     width: 30px;
-    font-size: 16px;
+    font-size: 0.4em;
     word-wrap: break-word;
     letter-spacing: 30px;
 
@@ -110,7 +110,7 @@
 
     left: 45%;
     width: 40px;
-    font-size: 0.4em;
+    font-size: 0.5em;
     color: #e5ddb5;
 }
 
@@ -314,12 +314,12 @@
 }
 
 #page-3 > .banner > img {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 #page-3 .small-slide {
-    height: 210px;
+    height: 280px;
 }
 
 #depart-news > div.splash {
