@@ -53,7 +53,7 @@
     position: absolute;
     left: 33%;
 
-    margin: auto;
+    margin:0 auto 0 auto;
     width: 30%;
     color: #b8ac86;
     cursor: pointer;
@@ -66,11 +66,14 @@
 }
 
 .page > .banner > .btn-page-down {
-    bottom: 20px;
+    bottom: 40px;
 }
 
 .page > .banner > .btn-page-up > img,
 .page > .banner > .btn-page-down > img {
+    position: absolute;
+    top:0;
+    left: 0;
     width: 100%;
     height: auto;
 }
@@ -293,7 +296,7 @@
 }
 
 #page-1 .banner > .btn-page-down {
-    bottom: 70px;
+    top: 80%;
 }
 
 #page-1 .box {
@@ -309,8 +312,16 @@
     margin-bottom: 60%;
 }
 
+#page-2 .btn-page-up {
+    top: 20px;
+}
+
 #page-2 .box {
     font-family: "微软雅黑";
+}
+
+#page-3 .btn-page-up {
+    top: 20px;
 }
 
 #page-3 > .banner > img {
