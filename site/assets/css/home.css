@@ -38,6 +38,9 @@
     background-color: #62210d;
 
     z-index: 25;
+
+    /*add the box shadow*/
+    box-shadow: 0 0 15px 3px #020202;
 }
 
 .page > .banner > img {
