@@ -42,6 +42,8 @@
 }
 
 .left-nav > .active {
+    background-color: #f4f4f4;
+
     border-style: solid;
     border-color: #62210d;
     border-width: 0 5px 0 0;

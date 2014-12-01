@@ -1,5 +1,4 @@
 ﻿
-
 .depart-nav > .one-depart {
     float: left;
 
@@ -23,6 +22,12 @@
     border-width: 0 0 1px 0;
 }
 
+.depart-nav > .active {
+    border-style: solid;
+    border-color: transparent lightgrey #720808 transparent;
+    border-width: 0 1px 5px 0;
+}
+
 .depart-name {
     margin-top: 84px;
     margin-bottom: 20px;
@@ -40,20 +45,32 @@
 }
 
 .teachers > .one-type-teacher {
-    height: 30px;
-    line-height: 30px;
-
+    margin: 15px 0 15px 0;
 }
 
 .teachers > .one-type-teacher > .teacher-type:before {
     content: '___';
-    color: rgba(0,0,0,0);
+    color: rgba(0, 0, 0, 0);
     background-image: url('../img/circle.png');
 }
 
 .teachers > .one-type-teacher > .teacher-type {
+    float: left;
     font-weight: bold;
+    line-height: 35px;
+    clear: left;
+}
 
+.teachers > .one-type-teacher > .names {
+    float: left;
+    max-width: 600px;
+    clear: right;
+}
+
+.teachers > .one-type-teacher > .names > span {
+    padding-left: 10px;
+    line-height: 35px;
+    display: inline-block;
 }
 
 .teacher-type-center {
@@ -88,5 +105,15 @@
     text-align: right;
     color: #515151;
     font-family: '微软雅黑';
-	float:right;
+    float: right;
+}
+
+.pager{
+    font-family: "Tahoma";
+    float: right;
+    margin-right:70px;
+}
+
+.pager {
+    cursor: pointer;
 }
